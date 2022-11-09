@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pet Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css">
+  </head>
+    <body>
+      <h1 id="title">Pets Survey</h1>
+      <p id="description">Your Opinions about Pets and Having a Pet</p><hr>
+
+      <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+<div class="divider">
+       <label id="name-label" class="toplabel">Please enter your name: 
+         <input id="name" type="text" placeholder="Enter your name" required>
+       </label>
+
+       <label id="email-label">Please enter your email address: 
+         <input type="email" id="email" placeholder="Enter your email" required>
+       </label>
+
+       <label id="number-label">How old are you?<input type="number" min="7" max="120" placeholder="Your age" id="number" name="animal-number">
+       </label>
+</div>
+
+<div class="divider">
+<label for="dropdown" >
+  Your favorite animal as a pet?
+       <select name="favorite" id="dropdown">
+         <option value="cat">Cat</option>
+         <option value="dog">Dog</option>
+         <option value="bird">Bird</option>
+         <option value="rabbit">Rabbit</option>
+         <option value="turtle">Turtle</option>
+         <option value="fish">Fish</option>
+         <option value="other">Other</option>
+       </select>
+      </label>
+</div>
+
+  <div class="divider">
+      
+         <p>Does your house have a garden?</p>
+       <label><input type="radio" name="housegarden" id="yes" value="yes">Yes</label>
+       </label>
+       <label><input type="radio" name="housegarden" id="no" value="no">No</label>
+      
+  </div>   
+    
+  <div class="divider"> 
+       
+         <p >Select animals you had or still have: </p>
+         <label for="dog"><input type="checkbox" name="petshad" value="dog" id="dog">Dog</label>
+         <label for="cat"><input type="checkbox" name="petshad" value="cat" id="cat">Cat</label>
+         <label for="fish"><input type="checkbox" name="petshad" value="fish" id="fish">Fish</label>
+         <label for="bird"><input type="checkbox" name="petshad" value="bird" id="bird">Bird</label>
+         <label for="rabbit"><input type="checkbox" name="petshad" value="rabbit" id="rabbit">Rabbit</label>
+         <label for="other"><input type="checkbox" name="petshad" value="other" id="other">Other</label>
+      
+</div>
+
+  <div class="divider lastdiv">
+        <label>Do you have an interesting story about your pets? Tell about us:<textarea name="story" rows="3" cols="30" placeholder="You can skip if you dont want to share.."></textarea ></label>
+  </div>
+  <div class="divider lastdiv">
+        <input type="submit" value="Submit" id="submit" />
+  </div>
+      </form>
+    </body>
+</html>
+
